@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>CSS Project</title>
+</head>
+<body >
+
+<section class="parent_container">
+  <!-- Navigation Section -->
+  <section class="navigation">
+  
+  <div class="welcome">
+   <img src="https://img.freepik.com/free-photo/cat-christmas-lights-cute-ginger-cat-lying-near-window-play-with-lights_8353-5954.jpg?t=st=1732629117~exp=1732632717~hmac=9f8d429b0077ed3e948ab8f219b7eea1049dfa871513f681c8eece92e5fe01d2&w=1480"  alt="cat-christmas-lights-cute-ginger-cat-lying-near-window-play-with-lights_8353-5954"/> 
+  
+    <span> "Welcome Roscelin!" </span>
+  </div>  
+    
+     <button id="compose-button" type="button">Compose</button>
+
+     <ol id="list_features">
+        <li><button class="list-buttons">Inbox (1)</button> </li>
+        <li><button class="list-buttons">Tagged </button></li>
+        <li> <button class="list-buttons">Important</button></li>
+        <li> <button class="list-buttons">Sent Email</button></li>
+        <li><button class="list-buttons">Drafts</button></li>
+        <li><button class="list-buttons">Trash</button></li>
+     </ol>
+
+  </section>
+
+  <!-- Email Inbox Section -->
+  <section class="email_inbox">
+    <form action="/search-email" method="GET">
+      <input class="search-email-bar" type="text" name="email-query" placeholder="Search emails..." />
+      <button id="hidden-button" type="submit">Search</button>
+    </form>
+    <div class="inbox-container">
+      <div class="email-item">
+        <div class="email-header">
+          <span class="sender">Linkedin</span>
+          <span class="date">02:45 PM</span>
+        </div>
+        <div class="email-subject">You have a new connection Request</div>
+      </div>
+      <div class="email-item">
+        <div class="email-header">
+          <span class="sender">Michael Scott Daily Quote</span>
+          <span class="date">Jul 3, 2020</span>
+        </div>
+        <div class="email-subject">I'm optimistic because everyday I get a ...</div>
+      </div>
+      <div class="email-item">
+        <div class="email-header">
+          <span class="sender">Lemar Software</span>
+          <span class="date">Feb 9, 2020</span>
+        </div>
+        <div class="email-subject">Learn how you can give us money by...</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reply Section -->
+  <section class="reply_section">
+    <div class="reply-header">
+      <p><strong>To:</strong> taylor@lamarsoftware.io</p>
+      <p><strong>From:</strong> re-reply@theofficenbc.com</p>
+    </div>
+    
+    <div class="reply_body">
+      <h2>Michael Scott Daily Quotes</h2>
+      <p>"Friends joke with one another. 'Hey, your momma's dead.' That's what friends do."</p>
+      <p>"It's a good thing Russia doesn't exist anymore."</p>
+      <p>"You cheated on me? When I specifically asked you not to?"</p>
+      <p>"It just seems awfully mean. But sometimes, the ends justify the mean"</p>
+      <p>"Reverse psychology is an awesome tool. I don't know if you guys know about it, but basically, you make someone think the opposite of what you believe, and that tricks them into doing something stupid. Works like a charm"</p>
+    </div>
+
+    <div class="reply_area">
+     <form>
+      <textarea rows="10" cols="40"> Enter message...</textarea>
+     
+        <button id="send-email-button" type="submit"> Send Email </button>
+    </form>
+   </div>
+  </section>
+</section>
+
+</body>
+</html>
